@@ -1,17 +1,21 @@
-.navbar{
-    background-color: $navigation-color;
-    height: 70px;
+.navbar {
+  background-color: $navigation-color;
+  height: 60px;
 }
 
-.nav-item{
-    color: $text-color;
-    margin: 0 10px 0 10px;
+.nav-item {
+  color: $text-color-ligth;
+  margin: 0 10px 0 10px;
 }
 
 .navbar-toggler {
-    .nav-icon{
-        color: $text-color;
-    }
-    border: none;
-    height: 50px;
+  .nav-icon {
+    color: $text-color-ligth;
+  }
+  border: none;
+  height: 50px;
+}
+
+.navbar-nav {
+  color: $text-color-dark;
 }
