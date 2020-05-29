@@ -1,7 +1,17 @@
 .navbar{
     background-color: $navigation-color;
+    height: 70px;
 }
 
 .nav-item{
-    color: $text-color !important;
+    color: $text-color;
+    margin: 0 10px 0 10px;
+}
+
+.navbar-toggler {
+    .nav-icon{
+        color: $text-color;
+    }
+    border: none;
+    height: 50px;
 }
