@@ -1,21 +1,8 @@
-.navbar {
-  background-color: $navigation-color;
-  height: 60px;
+.navbar{
+    height: 60px;
 }
 
-.nav-link {
-  color: $text-color-ligth;
-  margin: 0 10px 0 10px;
-}
-
-.navbar-toggler {
-  .nav-icon {
-    color: $text-color-ligth;
-  }
-  border: none;
-  height: 50px;
-}
-
-.navbar-nav {
-  color: $text-color-dark;
+.navbar-toggler{
+    position: absolute;
+    left: calc(100vh - 50px);
 }
