@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { SlidebarMenuComponent } from './components/slidebar-menu/slidebar-menu.component';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -14,7 +13,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavigationComponent,
     SlidebarMenuComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,

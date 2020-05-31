@@ -5,13 +5,18 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula mi id tortor aliquam, vel malesuada quam varius. Mauris commodo ex et ligula malesuada mattis. Nullam volutpat enim nec velit consequat, a malesuada mi scelerisque. Aenean vel enim tempus, semper mi id, imperdiet leo. Donec ullamcorper libero ac iaculis iaculis. Nullam eget lacus at sem aliquet fermentum vel et ligula. Aenean commodo eu sapien nec dictum. Donec at leo sed purus dignissim varius. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum metus nisl, tempus sit amet nulla eget, ornare hendrerit nisl. Sed semper leo sed sem lacinia elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac convallis nulla, sed pulvinar ligula. Donec semper non quam sed pellentesque. Curabitur viverra eget nunc quis lobortis. Nullam semper mauris quis tellus vulputate ultrices. Vestibulum vulputate aliquet laoreet. Donec iaculis sapien vel scelerisque vestibulum. Praesent rhoncus finibus risus et luctus. Mauris sit amet diam tincidunt, placerat purus in, ornare dolor. Proin arcu dolor, pretium eu bibendum sit amet, viverra eu libero. Nullam mattis vitae sem at tempus. Nullam feugiat pretium ex, vel mollis lectus aliquam non. Vestibulum pretium condimentum ultricies. Duis sagittis at elit nec tempor. Proin nec semper mauris. Maecenas et faucibus orci. Maecenas vulputate mi et metus sodales, mattis tristique mi efficitur. Nulla dignissim elit ac odio pharetra posuere. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sollicitudin posuere augue varius varius.",
         "item": [
             {
-                "id": "procejt",
+                "id": "procejt_2020",
                 "title": "Пројекти 2020",
                 "icon": "ikonica"
             },
             {
-                "id": "pastProcejt",
-                "title": "Прошлогодишњи пројекти",
+                "id": "procejt_2019",
+                "title": "Пројекти 2019",
+                "icon": "ikonica"
+            },
+            {
+                "id": "procejt_2018",
+                "title": "Пројекти 2018",
                 "icon": "ikonica"
             },
             {
@@ -22,6 +27,21 @@
             {
                 "id": "result",
                 "title": "Резултати",
+                "icon": "ikonica"
+            },
+            {
+                "id": "quiz",
+                "title": "Квиз мост математике",
+                "icon": "ikonica"
+            },
+            {
+                "id": "site",
+                "title": "Млади математичар",
+                "icon": "ikonica"
+            },
+            {
+                "id": "edusoft",
+                "title": "Образовни софтвер",
                 "icon": "ikonica"
             }
         ]
