@@ -32,17 +32,20 @@
             {
                 "id": "quiz",
                 "title": "Квиз мост математике",
-                "icon": "ikonica"
+                "icon": "ikonica",
+                "link": "http://edusoft.matf.bg.ac.rs/most-matematike/"
             },
             {
                 "id": "site",
                 "title": "Млади математичар",
-                "icon": "ikonica"
+                "icon": "ikonica",
+                "link": "http://www.mladimatematicar.org/"
             },
             {
                 "id": "edusoft",
                 "title": "Образовни софтвер",
-                "icon": "ikonica"
+                "icon": "ikonica",
+                "link": "http://edusoft.matf.bg.ac.rs/"
             }
         ]
     }
