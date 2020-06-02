@@ -1,14 +1,36 @@
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-<div class=" sidebar-sticky pt-3">
-  <ng-container *ngFor="let menu of (menuMetadata$ | async)">
-    <ul *ngFor="let items of menu.item" class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="{{items.link}}">
-          <span data-feather="home"></span>
-          {{items.title}}
-        </a>
-      </li>
-    </ul>
-  </ng-container>
-</div>
+  <div class=" sidebar-sticky pt-3">
+    <ng-container *ngFor="let menu of (menuMetadata$ | async)">
+      <ul *ngFor="let items of menu.item" class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{items.link}}">
+            {{items.title}}
+          </a>
+          <ul>
+            <li class="nav-item procejts-item" *ngFor="let projets of items.projects">
+              <button (click)="onProjectsClick(items.id, projets.id)" class="nav-link active">
+                {{projets.title}}
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </ng-container>
+  </div>
 </nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 home">
+      <ng-container *ngFor="let menu of (menuMetadata$ | async)">
+        <div *ngFor="let items of menu.item">
+          <div *ngFor="let projects of items.projects"
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+            [innerHTML]="projectsHTML$ | async">
+          </div>
+        </div>
+      </ng-container>
+
+    </main>
+  </div>
+</div>
