@@ -15,6 +15,10 @@
                     {
                         "id": "vuk_karadzic_beograd_young",
                         "title": "Друштвена игра Тик-так"
+                    },
+                    {
+                        "id": "vuk_karadzic_beograd_old",
+                        "title": "old"
                     }
                 ]
             },

@@ -16,3 +16,14 @@
 .procejts-item{
   list-style: none;
 }
+
+.btn-link{
+  color: $text-color;
+  border: none;
+  btn-link :hover{
+    border: none;
+  }
+  btn-link :active{
+    border: none;
+  }
+}

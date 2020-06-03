@@ -8,7 +8,7 @@
           </a>
           <ul>
             <li class="nav-item procejts-item" *ngFor="let projets of items.projects">
-              <button (click)="onProjectsClick(items.id, projets.id)" class="nav-link active">
+              <button type="button" class="btn btn-link" (click)="onProjectsClick(items.id, projets.id)">
                 {{projets.title}}
               </button>
             </li>
@@ -22,15 +22,10 @@
 <div class="container-fluid">
   <div class="row">
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 home">
-      <ng-container *ngFor="let menu of (menuMetadata$ | async)">
-        <div *ngFor="let items of menu.item">
-          <div *ngFor="let projects of items.projects"
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
-            [innerHTML]="projectsHTML$ | async">
-          </div>
-        </div>
-      </ng-container>
-
+      <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+        [innerHTML]="projectsHTML$ | async">
+      </div>
     </main>
   </div>
 </div>
