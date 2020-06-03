@@ -15,6 +15,8 @@ export class SlidebarMenuComponent implements OnInit, OnDestroy {
 
   private destroy$ = new Subject<void>();
 
+  url: string;
+
   constructor(
     private menuService: MenuService,
     private sanitizer: DomSanitizer,
@@ -44,5 +46,10 @@ export class SlidebarMenuComponent implements OnInit, OnDestroy {
       takeUntil(this.destroy$),
       map((pt) => (pt ? this.sanitizer.bypassSecurityTrustHtml(pt) : null))
     );
+  }
+
+  onClickDocument() {
+    this.url = '../../assets/documents/OS-Vuk-Karadzic-Beograd-Projekat-Sat10.pdf';
+    window.open(this.url);
   }
 }

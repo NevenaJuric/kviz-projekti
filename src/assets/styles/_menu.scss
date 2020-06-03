@@ -20,10 +20,18 @@
 .btn-link{
   color: $text-color;
   border: none;
-  btn-link :hover{
-    border: none;
+  &:hover{
+    text-decoration: none !important;
   }
-  btn-link :active{
-    border: none;
+}
+
+.project-content{
+  font-size: 18px;
+}
+
+.pdf-link{
+  color: $link-color;
+  &:hover{
+    text-decoration: none;
   }
 }
