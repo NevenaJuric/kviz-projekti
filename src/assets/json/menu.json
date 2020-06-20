@@ -67,21 +67,6 @@
             {
                 "id": "result",
                 "title": "Резултати"
-            },
-            {
-                "id": "quiz",
-                "title": "Квиз мост математике",
-                "link": "http://edusoft.matf.bg.ac.rs/most-matematike/"
-            },
-            {
-                "id": "site",
-                "title": "Млади математичар",
-                "link": "http://www.mladimatematicar.org/"
-            },
-            {
-                "id": "edusoft",
-                "title": "Образовни софтвер",
-                "link": "http://edusoft.matf.bg.ac.rs/"
             }
         ]
     }

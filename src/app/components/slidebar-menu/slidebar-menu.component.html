@@ -3,19 +3,34 @@
     <ng-container *ngFor="let menu of (menuMetadata$ | async)">
       <ul *ngFor="let items of menu.item" class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="{{items.link}}">
-            {{items.title}}
-          </a>
-          <ul>
+          <button type="button" class="btn btn-link" (click)="onItemsClick(items.id)">{{items.title}}</button>
+          <!-- <ul>
             <li class="nav-item procejts-item" *ngFor="let projets of items.projects">
               <button type="button" class="btn btn-link" (click)="onProjectsClick(items.id, projets.id)">
                 {{projets.title}}
               </button>
             </li>
-          </ul>
+          </ul> -->
         </li>
       </ul>
     </ng-container>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="http://edusoft.matf.bg.ac.rs/most-matematike/" target="_blank">
+          Квиз мост математике
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="http://www.mladimatematicar.org/" target="_blank">
+          Млади математичар
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="http://edusoft.matf.bg.ac.rs/" target="_blank">
+          Образовни софтвер
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
 
@@ -24,6 +39,7 @@
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 home">
       <div [innerHTML]="projectsHTML$ | async">
       </div>
+      <div [innerHTML]="pagesHTML$ | async"></div>
     </main>
   </div>
 </div>

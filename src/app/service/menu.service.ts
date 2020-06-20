@@ -14,6 +14,13 @@ export class MenuService {
     return this.httpClient.get<any[]>('assets/json/menu.json');
   }
 
+  getPages(itemsId: string): Observable<string> {
+    if (itemsId){
+      return this.httpClient.get<string>(`assets/data/${itemsId}/${itemsId}.html`, {responseType: 'text' as 'json'});
+    }
+    return of(null);
+  }
+
   getItems(itemsId: string, projectId: string): Observable<string> {
     if (itemsId && projectId){
       return this.httpClient.get<string>(`assets/data/${itemsId}/${projectId}.html`, {responseType: 'text' as 'json'});
