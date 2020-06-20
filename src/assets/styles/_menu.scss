@@ -1,37 +1,40 @@
-#sidebarMenu {
+.slidebar-menu {
   width: 300px;
-  height: 100%;
+  height: calc(100% - 60px);
   position: fixed;
   z-index: 100;
+  overflow-y: scroll;
+  overflow-x: hidden;
   @media (max-width: 768px) {
     width: 100%;
-    height: auto;
+    overflow-y: scroll;
+    height: calc(100% - 60px);
   }
 }
 
-.nav-link{
+.nav-link {
   color: $text-color;
 }
 
-.procejts-item{
+.procejts-item {
   list-style: none;
 }
 
-.btn-link{
+.btn-link {
   color: $text-color;
   border: none;
-  &:hover{
+  &:hover {
     text-decoration: none !important;
   }
 }
 
-.project-content{
+.project-content {
   font-size: 18px;
 }
 
-.pdf-link{
+.pdf-link {
   color: $link-color;
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }

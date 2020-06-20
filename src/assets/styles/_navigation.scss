@@ -1,4 +1,11 @@
-.navbar{
-    height: 60px;
+.navbar {
+  height: 60px;
 }
 
+.navbar-toggler {
+  @media (max-width: 576px) {
+    position: relative;
+    bottom: 30px;
+    left: calc(100% - 70px);
+  }
+}
