@@ -55,7 +55,6 @@ export class SlidebarMenuComponent implements OnInit, OnDestroy {
       takeUntil(this.destroy$),
       map((pt) => (pt ? this.sanitizer.bypassSecurityTrustHtml(pt) : null))
     );
-    console.log('ok');
   }
 
   private _loadProjects() {

@@ -4,13 +4,13 @@
       <ul *ngFor="let items of menu.item" class="nav flex-column">
         <li class="nav-item">
           <button type="button" class="btn btn-link" (click)="onItemsClick(items.id)">{{items.title}}</button>
-          <!-- <ul>
+          <ul>
             <li class="nav-item procejts-item" *ngFor="let projets of items.projects">
               <button type="button" class="btn btn-link" (click)="onProjectsClick(items.id, projets.id)">
                 {{projets.title}}
               </button>
             </li>
-          </ul> -->
+          </ul>
         </li>
       </ul>
     </ng-container>
